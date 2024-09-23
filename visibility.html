@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Visibility</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .box {
+            width: 200px;
+            height: 100px;
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #333;
+            text-align: center;
+        }
+        #hiddenBox {
+            visibility: hidden;
+        }
+        #collapseBox {
+            display: none; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de la Propiedad Visibility</h1>
+    <div class="box" id="visibleBox" style="visibility: visible;">
+        Este es un elemento seteado como visible es uno el cual ocupa siempre su espacio aunque se oculto, con el boton se oculta
+    </div>
+    <button onclick="toggleVisibility('visibleBox')">Toggle Visible</button>
+
+
+    
+    <div class="box" id="collapseBox">
+        Este es un elemento en donde, cuando colapsa el display se setea en non ocupando cero espacio en la web y repocisionandola
+    </div>
+    <button onclick="toggleCollapse()">Toggle Collapse</button>
+
+    <script>
+        function toggleVisibility(id) {
+            const element = document.getElementById(id);
+            if (element.style.visibility === "hidden") {
+                element.style.visibility = "visible";
+            } else {
+                element.style.visibility = "hidden";
+            }
+        }
+
+        function toggleCollapse() {
+            const collapseElement = document.getElementById('collapseBox');
+            if (collapseElement.style.display === "none") {
+                collapseElement.style.display = "block"; 
+            } else {
+                collapseElement.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

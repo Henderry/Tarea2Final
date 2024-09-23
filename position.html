@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Ejemplos de Position y sus funcionalidades</h1>
+    <h2>Position</h2>
+    <p>Relative</p>
+    <p>Estas propiedades funcionan para ubicar objetos con CSS3 dentro de la pantalla y acomodar todo de mejor forma.</p>
+    <p>A continuación, presione el botón para centrar el texto en el cuadro.</p>
+    <ul>
+        <li>
+            <a href="#Static">Static</a>
+        </li>
+    </ul>
+    <div id="Static">Esto es un ejemplo de una Posicion Estatica la misma tiene el flujo conforme el orden que se le da en html, es decir que a esta no le podremos dar posicion con top,buttom, etc..
+    </div>
+    <div id="Relative">
+      
+Esta es una Posicion Relativa esta se mueve dentro de la pagina dentro de la posicion original que le corresponde, como se aprecia con respecto al cuadro anterior esta se movio un poco para distinguirla
+
+        <div id="Absolute">
+            Esta se mueve con respecto a su Ancestro mas cercano, la misma se comporta como un child, en este caso es la pagina, por lo tanto, si presionas quieres centrarla presiona centrar</div>
+    </div>
+    <button id="Posicionar">Centrar </button>
+    <p>Con el siguiente podremos, al presionarlo, activar el fixed, el cual nos seguir por toda la pantalla</p>
+    <button id="AparecerFixed">Aparecer Fixed</button>
+
+    <div id="Fixed" style="display: none;">
+        Elemento Fixed
+    </div>
+    <script>
+        document.getElementById("Posicionar").onclick = function() {
+            var absoluteElement = document.getElementById("Absolute");
+            var relativeElement = document.getElementById("Relative");
+
+            absoluteElement.style.top = (relativeElement.clientHeight / 2 - absoluteElement.clientHeight / 2) + "px";
+            absoluteElement.style.left = (relativeElement.clientWidth / 2 - absoluteElement.clientWidth / 2) + "px";
+        };
+
+        document.getElementById("AparecerFixed").onclick = function() {
+            var fixedElement = document.getElementById("Fixed");
+            fixedElement.style.position = "fixed";
+            fixedElement.style.top = "20px"; 
+            fixedElement.style.right = "20px"; 
+            fixedElement.style.backgroundColor = "lightgray"; 
+            fixedElement.style.padding = "10px";
+            fixedElement.style.display = "block"; 
+        };
+            </script>
+</body>
+</html>
+ 

@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.CajaBase {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  margin: 20px 10px;
+  font-size: 11;
+  padding: 10px;
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+#Caja1{
+
+  
+
+}
+
+.CajaAmpliada {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  margin: 20px 10px;
+  font-size: 27;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.Representacion1 {
+  height: 300px;
+  background-color: rgb(0, 183, 255);
+  margin: 30px 30px;
+  font-size: 30;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+img {
+  padding: 30px;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.Representacion2 {
+  height: 300px;
+  background-color: rgb(6, 236, 64);
+  margin: 0px 20px;
+  font-size: 30;
+  padding: 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.Representacion3 {
+  height: 300px;
+  background-color: rgb(27, 102, 46);
+  margin: 0px 20px;
+  font-size: 30;
+  padding: 30px;
+  box-sizing: border-box;
+  border: 10px double black;
+  overflow: hidden;
+}
+.Representacion4 {
+  height: 300px;
+  background-color: rgb(27, 102, 46);
+  margin: 40px 20px;
+  font-size: 30;
+  padding: 30px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 30px black;
+  overflow: hidden;
+}
+.Representacion5 {
+  height: 300px;
+  background-color: rgb(42, 44, 156);
+  margin: 40px 20px;
+  font-size: 30;
+  padding: 30px;
+  box-sizing: border-box;
+  border: 10px double black;
+  box-shadow: 5px 5px 30px black;
+  overflow: hidden;
+  border-radius: 30px;
+}
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#Static {
+  height: 300px;
+  background-color: rgb(27, 102, 46);
+  margin: 40px 20px;
+  font-size: 30;
+  padding: 30px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 30px black;
+  overflow: hidden;
+  border: 1px solid black;
+  padding: 10px;
+}
+#Relative {
+  height: 300px;
+  background-color: rgb(27, 102, 46);
+  margin: 40px 20px;
+  font-size: 30;
+  padding: 30px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 30px black;
+  overflow: hidden;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  border: 1px solid black;
+  padding: 10px;
+}
+#Absolute {
+  position: absolute;
+  border: 1px solid red;
+  padding: 5px;
+  background-color: white;
+}
+#Fixed {
+  border: 1px solid black;
+  display: none;
+}
+#ImagenFormato1 {
+  float: left;
+  width: 400px;
+}
+#right {
+  clear: left;
+  margin: 100px 100px;
+  padding: 100px 100px;
+  background-color: #feb47b;
+}
+#ImagenFormato2 {
+  clear: left;
+  float: right;
+  width: 400px;
+}
+#left {
+  margin: 100px 100px;
+  padding: 100px 100px;
+  background-color: #feb47b;
+}
+#clearboth{
+
+  
+  margin: 100px 100px;
+  padding: 100px 100px;
+  background-color: #feb47b;
+}
+.ElementoBloque{
+background-color: #ff7e5f;
+margin: 100px 100px;
+padding: 100px 100px;
+width: 200px;
+height: 200px;
+margin-bottom: 20px;
+display: block;
+}
+.ElementoLinea{
+  background-color: #ff7e5f;
+  margin: 50px 50px;
+  padding: 50px 50px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+display: inline-block;  
+
+}
+.TDesbordado{
+font-size: 20;
+font-family: 'Courier New', Courier, monospace;
+color: black;
+background-color: wheat;
+margin: 20px 300px;
+padding: 100px;
+width: 20px;
+height: 20px;
+}
+.TNoDesbordado{
+
+  font-size: 20;
+font-family: 'Courier New', Courier, monospace;
+color: black;
+background-color: wheat;
+margin: 20px 300px;
+padding: 100px;
+width: 20px;
+height: 20px;
+overflow: hidden;
+}
+.TNoScrllDesbordado{
+  font-size: 20;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+  background-color: wheat;
+  margin: 20px 300px;
+  padding: 100px;
+  width: 20px;
+  height: 20px;
+  overflow: scroll;
+  
+}
+.TNoAutoDesbordado{
+  font-size: 20;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+  background-color: wheat;
+  margin: 20px 300px;
+  padding: 100px;
+  width: 20px;
+  height: 20px;
+  overflow: auto;
+  
+}
+div{
+  border-radius: 5px  ;
+  color: #feb47b;
+  font-size: 2.8em;
+  font-weight: bold;
+  line-height: 100px;
+  padding: 5em;
+  text-align: center;
+  background-color: rgba(173, 216, 230,.7);
+  width: 100px;
+  height: 100px;
+}
+.uno{
+  
+  position: absolute;
+  background:tomato;
+top: -200px;
+left: -200px;
+}
+.uno1{
+  
+  position: absolute;
+  background:tomato;
+top: 500px;
+left: -200px;
+z-index: 1;
+}
+.dos2{
+  
+  position: absolute;
+  background: yellowgreen;
+  top: 700px;
+  left: -150px;
+  z-index: 0;
+ 
+}
+.dos{
+  
+  position: absolute;
+  background: yellowgreen;
+  top: -150px;
+  left: -150px;
+  
+ 
+}
+.tres{
+  position: absolute;
+  background: whitesmoke;
+  top: -100px;
+  left: -100px;
+  
+
+}
+.tres3{
+  position: absolute;
+  background: whitesmoke;
+  top: 900px;
+  left: -100px;
+  
+
+}
+.Posicionado{
+  margin: 200px 200px;
+  padding: 200px 200px;
+  width: 200px 200px;
+  height: 200px 200px;
+  position: absolute;
+}
+.ZIndexEx{
+top: 1750px;
+font-size: 20;
+color: black;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: absolute;
+}
+.EstiloP{
+  font-size: 20;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+
+}
